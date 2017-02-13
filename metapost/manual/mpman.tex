@@ -11,6 +11,7 @@
 \RequirePackage{cmap}
 \fi
 \documentclass{article} % article is NOT the original style
+\usepackage[UTF8]{ctex} % 中文支持
 \usepackage[nofancy]{svninfo}% Access VCS information.
 \svnInfo $Id: mpman.tex 2059 2015-04-30 21:56:18Z karl $
 \newcommand*{\mpversion}{1.999}
@@ -25,7 +26,7 @@
 \RecustomVerbatimEnvironment
   {verbatim}{BVerbatim}{baseline=c}
 \usepackage{graphicx}
-\usepackage[latin1]{inputenc}
+%\usepackage[latin1]{inputenc}
 \usepackage[textwidth=6in,textheight=8.65in]{geometry}
 \usepackage{tocloft}
   \setlength\cftbeforesecskip{1.3ex plus 0.3ex minus 0.3ex}
@@ -1996,7 +1997,7 @@ encoding:
 \verb|prologues:=2;|\\
 \verb|fontmapfile "texnansi-lm.map";|\\
 \verb|beginfig(1);|\\
-\verb|   draw "Hell�, vil�g" infont "texnansi-lmr10";|\\
+\verb|   draw "Helló, világ" infont "texnansi-lmr10";|\\ 
 \verb|endfig;|
 \end{tabular}\end{center}
 
